@@ -14,7 +14,11 @@
   	<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
   	
   	<aspectj.version>1.7.0.M1</aspectj.version>
-  	
+  	<spring.version>3.1.1.RELEASE</spring.version>
+  	<logback.version>1.0.0</logback.version>
+  	<slf4j.version>1.6.4</slf4j.version>
+  	<guava.version>11.0.2</guava.version>
+  	<cglib.version>2.2.2</cglib.version>
   </properties>
   
   <repositories>
@@ -35,6 +39,38 @@
   
   <dependencies>
   
+  	<!-- LOGGING -->
+  	<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${slf4j.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- CGLIB -->
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib-nodep</artifactId>
+			<version>${cglib.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+  	
+  	<!-- SPRING -->
+	
+	<!-- UTILS -->
+	<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+	
+  	<!-- ASPECTJ -->
   	<dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjrt</artifactId>
@@ -47,6 +83,7 @@
         </dependency>
   
   
+  <!-- TEST -->
     <dependency>
     	<groupId>junit</groupId>
     	<artifactId>junit</artifactId>
