@@ -27,5 +27,6 @@ public class UserTest {
 		assertFalse(u3.equals(u));
 		
 	}
+	
 
 }

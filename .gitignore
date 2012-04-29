@@ -5,5 +5,5 @@
 .classpath
 target/
 build/
-
+ajcore*
 
