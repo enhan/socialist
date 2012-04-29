@@ -27,6 +27,13 @@ public class UserTest {
 		assertFalse(u3.equals(u));
 		
 	}
-	
+
+	@Test
+	public void testHello(){
+		
+		User u = new User();
+		assertTrue(u.sayHello().equals("hello"));
+		
+	}
 
 }

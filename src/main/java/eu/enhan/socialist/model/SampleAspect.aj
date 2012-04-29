@@ -7,7 +7,11 @@ package eu.enhan.socialist.model;
  * @author Emmanuel Nhan
  *
  */
-public aspect SampleAspect {
+public privileged aspect SampleAspect {
+	
+	public String User.sayHello(){
+		return "hello";
+	}
 	
 	pointcut userInit() : execution(public void User.setName(String));
 	
