@@ -15,6 +15,7 @@ public privileged aspect SampleAspect {
 	
 	pointcut userInit() : call(public User.new(..));
 	
+	
 	before() : userInit() {
 		System.out.println("Teste pointcut");
 	}
