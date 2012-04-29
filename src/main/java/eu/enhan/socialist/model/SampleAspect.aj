@@ -13,7 +13,7 @@ public privileged aspect SampleAspect {
 		return "hello";
 	}
 	
-	pointcut userInit() : execution(public void User.setName(String));
+	pointcut userInit() : call(public User.new(..));
 	
 	before() : userInit() {
 		System.out.println("Teste pointcut");
