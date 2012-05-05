@@ -6,6 +6,13 @@
 <head>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="/socialist/resources/css/bootstrap.css">
+<style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+</style>
+<link href="/socialist/resources/css/bootstrap-responsive.css" rel="stylesheet">
+
 <title>Socialist</title>
 </head>
 
