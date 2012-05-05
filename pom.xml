@@ -19,6 +19,7 @@
 		<slf4j.version>1.6.4</slf4j.version>
 		<guava.version>11.0.2</guava.version>
 		<cglib.version>2.2.2</cglib.version>
+		<groovy.version>1.8.6</groovy.version>
 	</properties>
 
 	<repositories>
@@ -93,6 +94,13 @@
 			<version>${aspectj.version}</version>
 		</dependency>
 
+
+		<!--  GROOVY -->
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+			<version>${groovy.version}</version>
+		</dependency>
 
 		<!-- SERVLET 3.0 -->
 		<dependency>
